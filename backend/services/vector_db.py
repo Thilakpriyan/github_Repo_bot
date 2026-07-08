@@ -13,6 +13,16 @@ class VectorDatabase:
             name="github_repository"
         )
 
+    def clear_collection(self):
+        self.client.delete_collection(
+            "github_repository"
+        )
+
+        self.collection = self.client.get_or_create_collection(
+            "github_repository"
+        )
+
+
     def add_chunks(
         self,
         chunks,

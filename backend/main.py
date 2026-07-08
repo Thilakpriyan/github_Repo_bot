@@ -3,7 +3,7 @@ from services.repository_reader import RepositoryReader
 from services.chunker import DocumentChunker
 from services.embedding_service import EmbeddingService
 from services.vector_db import VectorDatabase
-
+from services.retriever_service import Retriever
 
 def main():
 
@@ -48,6 +48,36 @@ def main():
     vector_db.add_chunks(chunks, embeddings)
 
     print("Repository Indexed Successfully!")
+
+    retriever = Retriever()
+
+    print("\n==============================")
+
+    while True:
+
+        question = input("\nAsk Question (type exit to quit): ")
+
+        if question.lower() == "exit":
+            break
+
+        results = retriever.retrieve(question)
+
+        print("\nTop Retrieved Chunks\n")
+
+        for i, document in enumerate(results["documents"][0], 1):
+            metadata = results["metadatas"][0][i - 1]
+
+            print("=" * 60)
+
+            print(f"Rank : {i}")
+
+            print(f"File : {metadata['file_name']}")
+
+            print()
+
+            print(document[:700])
+
+            print()
 
 
 if __name__ == "__main__":

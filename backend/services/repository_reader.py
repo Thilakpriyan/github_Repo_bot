@@ -39,6 +39,13 @@ class RepositoryReader:
         ".idea",
         ".vscode"
     }
+    IGNORED_FILES = {
+        "package-lock.json",
+        "yarn.lock",
+        "pnpm-lock.yaml",
+        "poetry.lock",
+        ".DS_Store"
+    }
 
     def read_repository(self, repository_path: str):
         """
@@ -55,6 +62,9 @@ class RepositoryReader:
                 continue
 
             if any(folder in file_path.parts for folder in self.IGNORED_DIRECTORIES):
+                continue
+
+            if file_path.name in self.IGNORED_FILES:
                 continue
 
             if file_path.suffix.lower() not in self.SUPPORTED_EXTENSIONS:
