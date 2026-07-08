@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer
-from services.vector_db import VectorDatabase
+from backend.services.vector_db import VectorDatabase
 
 
 class Retriever:
