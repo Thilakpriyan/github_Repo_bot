@@ -46,3 +46,25 @@ class RepositoryManager:
         repositories = self.load()
 
         return list(repositories.keys())
+
+    # -------------------------
+    # NEW METHODS
+    # -------------------------
+
+    def get_all_repositories(self):
+
+        return self.load()
+
+    def remove_repository(self, repo_name):
+
+        repositories = self.load()
+
+        if repo_name in repositories:
+
+            del repositories[repo_name]
+
+            self.save(repositories)
+
+            return True
+
+        return False
