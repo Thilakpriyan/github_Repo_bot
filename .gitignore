@@ -55,3 +55,8 @@ Thumbs.db
 # ==========================
 dist/
 build/
+backend/data/
+backend/repositories/
+backend/vector_store/
+
+
