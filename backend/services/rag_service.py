@@ -1,6 +1,6 @@
-from services.retriever_service import Retriever
-from services.prompt_builder import PromptBuilder
-from services.llm_service import LLMService
+from backend.services.retriever_service import Retriever
+from backend.services.prompt_builder import PromptBuilder
+from backend.services.llm_service import LLMService
 
 
 class RAGService:
