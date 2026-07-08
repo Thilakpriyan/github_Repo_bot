@@ -14,6 +14,7 @@ class Retriever:
 
     def retrieve(
         self,
+        collection_name,
         query,
         top_k=5
     ):
@@ -22,9 +23,8 @@ class Retriever:
             query
         )
 
-        results = self.vector_db.collection.query(
-            query_embeddings=[query_embedding.tolist()],
-            n_results=top_k
+        return self.vector_db.query(
+            collection_name,
+            query_embedding,
+            top_k
         )
-
-        return results

@@ -13,9 +13,15 @@ class RAGService:
 
         self.llm = LLMService()
 
-    def ask(self, question):
-
-        retrieved = self.retriever.retrieve(question)
+    def ask(
+            self,
+            collection_name,
+            question
+    ):
+        retrieved = self.retriever.retrieve(
+            collection_name,
+            question
+        )
 
         chunks = retrieved["documents"][0]
 
@@ -24,6 +30,8 @@ class RAGService:
             chunks
         )
 
-        answer = self.llm.generate_answer(prompt)
+        answer = self.llm.generate_answer(
+            prompt
+        )
 
         return answer
