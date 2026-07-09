@@ -102,12 +102,6 @@
 #             repo_name,
 #             question
 #         )
-#
-#
-#
-#
-#
-#
 #         print("\n")
 #         print("=" * 70)
 #         print("AI Answer")

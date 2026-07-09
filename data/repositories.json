@@ -1,1 +1,14 @@
-{}
+{
+    "Mobiscan-via-SMS": {
+        "url": "https://github.com/thxrun/Mobiscan-via-SMS"
+    },
+    "cloudops-automation": {
+        "url": "https://github.com/devilzzz-lab/cloudops-automation"
+    },
+    "File_sharing_Application": {
+        "url": "https://github.com/ATKTharun1807/File_sharing_Application"
+    },
+    "Securing-Data-Encryption-Using-the-Homomorphic-Encryption": {
+        "url": "https://github.com/padalingam4648-atman/Securing-Data-Encryption-Using-the-Homomorphic-Encryption"
+    }
+}

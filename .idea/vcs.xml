@@ -2,5 +2,17 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/Archy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/File_sharing_Application" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/Mobiscan-via-SMS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/QuickCart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/Safe_Pipe---DevSecOps-Project-" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/Securing-Data-Encryption-Using-the-Homomorphic-Encryption" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/VirtualPaint-OpenCV-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/agentic-rag" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/ai-recruitment-ranking" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/cloudops-automation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/github_Repo_bot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repositories/terminal-chat" vcs="Git" />
   </component>
 </project>
